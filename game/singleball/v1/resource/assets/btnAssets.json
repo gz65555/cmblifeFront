@@ -1,0 +1,33 @@
+{
+"file": "btnAssets.png"
+,
+"frames": {
+	"btn_back1": {"x":432, "y":156, "w":16, "h":25, "offX":13,"offY":34,"sourceW":100,"sourceH":82},
+	"btn_back2": {"x":432, "y":130, "w":16, "h":25, "offX":13,"offY":34,"sourceW":100,"sourceH":82},
+	"btn_close1": {"x":492, "y":520, "w":73, "h":73, "offX":0,"offY":0,"sourceW":73,"sourceH":73},
+	"btn_close2": {"x":424, "y":446, "w":73, "h":73, "offX":0,"offY":0,"sourceW":73,"sourceH":73},
+	"btn_earn1": {"x":220, "y":213, "w":211, "h":64, "offX":0,"offY":0,"sourceW":211,"sourceH":64},
+	"btn_earn2": {"x":212, "y":414, "w":211, "h":64, "offX":0,"offY":0,"sourceW":211,"sourceH":64},
+	"btn_history": {"x":424, "y":390, "w":169, "h":55, "offX":0,"offY":0,"sourceW":169,"sourceH":55},
+	"btn_history1": {"x":424, "y":334, "w":169, "h":55, "offX":0,"offY":0,"sourceW":169,"sourceH":55},
+	"btn_history2": {"x":424, "y":278, "w":169, "h":55, "offX":0,"offY":0,"sourceW":169,"sourceH":55},
+	"btn_know1": {"x":240, "y":0, "w":211, "h":64, "offX":0,"offY":0,"sourceW":211,"sourceH":64},
+	"btn_know2": {"x":240, "y":65, "w":211, "h":64, "offX":0,"offY":0,"sourceW":211,"sourceH":64},
+	"btn_last1": {"x":246, "y":544, "w":122, "h":40, "offX":2,"offY":1,"sourceW":125,"sourceH":42},
+	"btn_last2": {"x":0, "y":544, "w":122, "h":40, "offX":0,"offY":0,"sourceW":122,"sourceH":40},
+	"btn_next1": {"x":369, "y":544, "w":122, "h":40, "offX":2,"offY":1,"sourceW":125,"sourceH":42},
+	"btn_next2": {"x":123, "y":544, "w":122, "h":40, "offX":0,"offY":0,"sourceW":122,"sourceH":40},
+	"btn_out1": {"x":212, "y":479, "w":211, "h":64, "offX":0,"offY":0,"sourceW":211,"sourceH":64},
+	"btn_out2": {"x":220, "y":148, "w":211, "h":64, "offX":0,"offY":0,"sourceW":211,"sourceH":64},
+	"btn_relogin1": {"x":212, "y":349, "w":211, "h":64, "offX":0,"offY":0,"sourceW":211,"sourceH":64},
+	"btn_relogin2": {"x":212, "y":284, "w":211, "h":64, "offX":0,"offY":0,"sourceW":211,"sourceH":64},
+	"btn_retry1": {"x":0, "y":479, "w":211, "h":64, "offX":0,"offY":0,"sourceW":211,"sourceH":64},
+	"btn_retry2": {"x":0, "y":414, "w":211, "h":64, "offX":0,"offY":0,"sourceW":211,"sourceH":64},
+	"btn_share1": {"x":0, "y":349, "w":211, "h":64, "offX":0,"offY":0,"sourceW":211,"sourceH":64},
+	"btn_share2": {"x":0, "y":284, "w":211, "h":64, "offX":0,"offY":0,"sourceW":211,"sourceH":64},
+	"btn_shutdown1": {"x":0, "y":216, "w":219, "h":67, "offX":0,"offY":0,"sourceW":219,"sourceH":67},
+	"btn_shutdown2": {"x":0, "y":148, "w":219, "h":67, "offX":0,"offY":0,"sourceW":219,"sourceH":67},
+	"btn_start1": {"x":0, "y":74, "w":239, "h":73, "offX":0,"offY":0,"sourceW":239,"sourceH":73},
+	"btn_start2": {"x":0, "y":0, "w":239, "h":73, "offX":0,"offY":0,"sourceW":239,"sourceH":73}
+
+}}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style>
+    body{
+        color: #5493a4
+    }
+</style>
+<body>
+    <script>
+        var url = "http://99.6.104.142:3000/release/html5/v1/launcher/index.html";
+        url = encodeURIComponent(url);
+//        alert(url);
+        var xieyi = "cmblife://go?url=web&next={url}&hiddenNavBar=YES";
+        xieyi = xieyi.replace("{url}",url);
+        window.location.href = xieyi;
+    </script>
+</body>
+</html>

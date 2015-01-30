@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <title>登陆掌上生活</title>
+    <style>
+        body {
+            text-align: center;
+            background: #ffffff;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+
+        html {
+            -ms-touch-action: none; /* Direct all pointer events to JavaScript code. */
+        }
+    </style>
+
+
+    <div id="loadingDiv" style="position: absolute;background-color: #ffffff;display: none">
+        <div id="startDiv" style="position: absolute;">
+            <div id="bg" style="position: absolute">
+                <a href="cmblife://popweb">
+                    <div style="width:200px;height:64px;border: 3px solid;border-color: #58A3C0;background-color: #ffffff;
+                        border-top-left-radius: 6px;border-top-right-radius: 6px;border-bottom-left-radius: 6px;border-bottom-right-radius: 6px;
+                        -webkit-border-top-left-radius: 36px;-webkit-border-top-right-radius: 36px;-webkit-border-bottom-left-radius: 36px;-webkit-border-bottom-right-radius: 36px;"></div>
+                </a>
+            </div>
+            <div id="tuichu" style="font-family:Arial;font-size: 30px;color: #58A3C0;position: absolute">
+                退出
+            </div>
+            <div id="yinying" style="position: absolute">
+                <!--<img src="resource/assets/indexPre/yinying.png">-->
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPQAAABGCAMAAADM80myAAAAllBMVEUAAADe5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5eve5etSYnObAAAAMnRSTlMABwMNKBkKEzA5EExCNUcWbiFWPVEsrSRoY7Z5f3SmngGZiYReHVvEk8u9H9OO2+Ps9qTQ56QAAAXqSURBVHja1NiJVhNBEIXhCEExIQouyBIxqMElrO//cjap6vqrqjMhOaxePB4l0cM3t6amofeImZRsEPLKZYOQSUnvvwpSfGtkI16JF62nVi94XbO5Uuzt/v94eeVP5vHWqBz4vFmS8MZ4DdCL/Tn1ilVvlkJ8b9laEt7FZch+twOeRT6hW7RQo3GqmUn2QmaSqSZeBfjY6f3J3Fovk4xWrEDN98WlvyD+dbsSXADRY2fmn2DVcfPi9VqwUB3t8x3pE/jgvT3IH3HaI7jlWrEiNeW2ZbQ9WpLysmX+D/Fb9S09wh8JbP2Kl2qdFmkFva352Bl7y0iDH7srXuTW+UPDKzjPs3qjFmtg7ri8y9nxCZcAfbSrPE97hT+EOE+0zLP0W7lojZqQwxWSroLxsVe6dC7Tnmf9Xu7JInEEU2/meukny4fO8B7vz3RK9/DF7sm9xVQsEy3g4PXaOXUYoWean03qK/ECDOd8b3dyheusU/g93CwuL95CDNh7rVuzGvKQHDQ5JHYRVK/FZzlw3Fu411lsmClZplrEEUzB4kUL1it374y/BuCxi5zKI1zcMufUjXrFufYdy11s9zDg5BWtWJF+rTnuiL0Bv+jFnuTA7R6XO9z3vcaUx5K5j6VjZjo0nLym9dAx+RHC54/H7gKYPclD40y69M39Heteq2XGmqlGHMHqhatUmN+XJV4CwStd5BmOmzlnzFduW8i0TMlCzh0jLlUIOHmxXkh+d0Rfhu/lCpfG1Z37VjZ107ayu7+b8As7tEzJqWOt2MDGFa2jnlq+kVNifME7usK18Nw3dce2WeWipu3Ycq55NqPlhuyHOoOVW604Txamvope6RnuBx120/ZslspWd4t2ZGpuWmasRXwQxdavcj11/2S/K+Ulz1e6dR7dB+JmzJu2KduxQdNzXtlhY4eWZazpOIjxwq2yo/2jzsAvSXLcoW8Z89C23+R5kdN1PowMCloXmJL1GJJb9mQ6FrGA4arrb2eOyoe3W+nVTd+e3bZdvtTKtoVWSOGwQs/5OTUr5r6rWVtmsJWsJZd7r0McvL8sf/TDonrk2S03uNQtbIZc2/Zl94t6xtOLfZa3Nkt7ukfP3jyUyZZ7WVqGfJHFeKFqzm9/kUpHnt0XsKXt8gXYjA+9mq73pqzxsMXrj/marY2Z0Q6TzWDTchJXL1bJ5Xn6Q70CJk9u2mbI/Ywz4qjZ4kFd0gtnsAHmvjfzmKJmmWzI0nLqGLAaLwmpeNypb2lb2Mw4ZfP48uo+6gHns4pmcdva7pdwP3eZx8ncloxYgVeXVznlM2IXd0lbd1KPu9Tc17cCW+Ks8IDebNDNDmO2dxuzr5mSqbjEtNdX15byF426FU7dlL1AvcuEN9usQW+CdtMdziTdw82DqpltIWczZLghsIsbNWXnCefhtWTAwynFz3ePoovZH0o4ecYlxqMqz3Y0Q87iG5/rm+ym7KDOE86jKywzDmfhkFLUVN0rvzfoYlb0iM1N0WGJ5eGm52wWMOTszmq6DgOelxlVs8FHii7qBl2yAppTyRlons/2eKZpima0MXer26pp2gY8PK85pMgZ5YWg/7VzLjsIQjEQjX/hwtdKNpr4/19ngw2H3ASCgQ41dcCNrE5K4N7plLbSaEmpgTYFQEtub7CR/QWy5PZWPMjAhhs58kv2IBO/ssA2UqdtHt0gU+eIV5Z+cYK8xLLFiWgZCjfgyHlHRX4IlqHyDYfDI8dlx6HZcOi3lmiXraXYRBjgh8MlNRE0dhHkyDnldlG0MQi4o+MNdv2vG1uDHwmMQZ0FPO8A27Wx/329xFrA681+B580+3H7jSiR2b+6rXNc3NYx/lZXYVtH38BDORp4NVu16qb8sz9GEjTl1fGLNn2BTigsfvEP2uwYqTrbmSZSpQvPoQzhueCY5L1NSeaISVYNxMZHn62UCaPPwSF3lC3kXnWcYbvBlXllG1zZakTJzmnZ1XQjSlWH0eqOHVYeMK06Slx3aHz6UYcO3+mHPg+w2YcgbvFlfQPCokPrl3jpxAAAAABJRU5ErkJggg==">
+
+            </div>
+            <div id="text" style="font-family: Arial;font-size: 28px;color: #333333;position: absolute">
+                正在登录游戏...
+            </div>
+            <div id="percent" style="font-family: Arial;font-size: 70px;color: #58A3C0;position: absolute">
+                0%
+            </div>
+        </div>
+    </div>
+
+    <div style="position:relative;background:none" id="gameDiv"></div>
+
+    <script>
+
+        var w = document.documentElement.clientWidth;
+        var h = document.documentElement.clientHeight;
+        var scale = w / 640;
+        var height = h / scale;
+
+        var startDiv = document.getElementById("startDiv");
+        function getHeader() {
+            if ("transform" in startDiv.style) {
+                return "";
+            }
+            var transArr = ["webkit", "ms", "Moz", "O"];
+            for (var i = 0; i < transArr.length; i++) {
+                var transform = transArr[i] + 'Transform';
+                if (transform in startDiv.style)
+                    return transArr[i];
+            }
+            return "";
+        }
+
+        function getTrans(header, style) {
+            if (header == "") {
+                return style;
+            }
+            return header + style.charAt(0).toUpperCase() + style.substr(1);
+        }
+
+        var header = getHeader();
+        startDiv.style[getTrans(header, "transform")] = "scale({scale})".replace("{scale}", scale.toString());
+        document.getElementById("loadingDiv").style.width = w + "px";
+        document.getElementById("loadingDiv").style.height = h + "px";
+
+        var rap = 2;
+        document.getElementById("yinying").style.left = ((640 - 240) / 2) + "px";
+        document.getElementById("yinying").style.top = (height / 2 - 28 / 2 - 50 - 70 - 20) + "px";
+        document.getElementById("bg").style.top = (height / 2 - 28 / 2 - 50 + 150) + "px";
+        document.getElementById("bg").style.left = ((640 - 212) / 2) + "px";
+        document.getElementById("text").style.top = (height / 2 - 28 / 2 - 50 - rap) + "px";
+        document.getElementById("text").style.width = "640px";
+        document.getElementById("text").style.textAlign = "center";
+        document.getElementById("percent").style.top = (height / 2 - 28 / 2 - 50 - 70 - 20 - 90 - rap - 4) + "px";
+        document.getElementById("percent").style.width = "640px";
+        document.getElementById("percent").style.textAlign = "center";
+        document.getElementById("tuichu").style.top = (height / 2 - 28 / 2 - 50 + 150 + 21 - rap) + "px";
+        document.getElementById("tuichu").style.width = "640px";
+        document.getElementById("tuichu").style.textAlign = "center";
+
+        document.getElementById("loadingDiv").style.display = "";
+
+        startDiv.style.display = "block";
+    </script>
+
+    <script src="../config.js?r=v3"></script>
+    <script src="login.js?r=v4"></script>
+</head>
+<body>
+</body>
+</html>
