@@ -1,13 +1,13 @@
 {
 	"groups":[
 	{
-		"keys":"btnAssets_json,10times_popup,1times_popup,2times_popup,background,bg_history,light_ball1,light_ball2,mask_di,popup_return,mainAssets_json,danseqiu2_json,danseqiu2_swf,cry_face,lol_face",
+		"keys":"btnAssets_json,10times_popup,1times_popup,2times_popup,background,bg_history,light_ball1,light_ball2,mask_di,popup_return,mainAssets_json,danseqiu2_json,danseqiu2_swf,cry_face,lol_face,maybeLose,win10,win2",
 		"name":"preload"
 	}],
 	"resources":[
 	{
 		"name":"btnAssets_json",
-		"subkeys":"btn_retry2,btn_next2,btn_shutdown1,btn_shutdown2,btn_history1,btn_next1,btn_know1,btn_back1,btn_relogin2,btn_back2,btn_share2,btn_retry1,btn_relogin1,btn_history2,btn_last2,btn_start2,btn_close1,btn_history,btn_share1,btn_last1,btn_close2,btn_out2,btn_start1,btn_earn2,btn_earn1,btn_know2,btn_out1",
+		"subkeys":"btn_back1,btn_back2,btn_close1,btn_close2,btn_earn1,btn_earn2,btn_history,btn_history1,btn_history2,btn_know1,btn_know2,btn_last1,btn_last2,btn_next1,btn_next2,btn_out1,btn_out2,btn_relogin1,btn_relogin2,btn_retry1,btn_retry2,btn_share1,btn_share2,btn_shutdown1,btn_shutdown2,btn_start1,btn_start2",
 		"type":"sheet",
 		"url":"assets/btnAssets.json"
 	},
@@ -58,13 +58,13 @@
 	},
 	{
 		"name":"mainAssets_json",
-		"subkeys":"add_effect,tip_circle,tip_hand,word_turnplate,bg,tips_di,unknow_di,common_popup,lose_di",
+		"subkeys":"add_effect,bg,common_popup,lose_di,tip_circle,tip_hand,tips_di,unknow_di,word_turnplate",
 		"type":"sheet",
 		"url":"assets/mainAssets.json"
 	},
 	{
 		"name":"danseqiu2_json",
-		"subkeys":"img_danseqiu-sc/xjfdalequ,img_danseqiu-sc/xiasozhuanpan,img_danseqiu-sc/xiaoqiu,img_danseqiu-sc/zhiyin-sc/shouzhi233,img_danseqiu-sc/dazhuanpan,img_danseqiu-sc/zhiyin-sc/shou",
+		"subkeys":"img_danseqiu-sc/dazhuanpan,img_danseqiu-sc/xiaoqiu,img_danseqiu-sc/xiasozhuanpan,img_danseqiu-sc/xjfdalequ,img_danseqiu-sc/zhiyin-sc/shou,img_danseqiu-sc/zhiyin-sc/shouzhi233",
 		"type":"sheet",
 		"url":"assets/dansheqiu1/danseqiu2.json"
 	},
@@ -82,5 +82,20 @@
 		"name":"lol_face",
 		"type":"image",
 		"url":"assets/lol_face.png"
+	},
+	{
+		"name":"maybeLose",
+		"type":"image",
+		"url":"assets/maybeLose.png"
+	},
+	{
+		"name":"win10",
+		"type":"image",
+		"url":"assets/win10.png"
+	},
+	{
+		"name":"win2",
+		"type":"image",
+		"url":"assets/win2.png"
 	}]
 }
